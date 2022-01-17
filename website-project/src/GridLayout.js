@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
   secondRowSecondItem: {
     backgroundColor: "orange",
   },
+  thirdRow: {
+    backgroundColor: "pink",
+  },
 }));
 
 const GridLayout = () => {
@@ -34,6 +37,18 @@ const GridLayout = () => {
         <Typography className={classes.secondRowSecondItem}>
           Second Row, Second Item
         </Typography>
+      </Grid>
+
+      <Grid item sm={4} xs={12}>
+        <Typography className={classes.thirdRow}>Third Row</Typography>
+      </Grid>
+
+      <Grid item sm={4} xs={12}>
+        <Typography className={classes.thirdRow}>Third Row</Typography>
+      </Grid>
+
+      <Grid item sm={4} xs={12}>
+        <Typography className={classes.thirdRow}>Third Row</Typography>
       </Grid>
     </Grid>
   );
