@@ -1,6 +1,13 @@
-import { Box, Container, Link, Toolbar, Typography } from "@material-ui/core";
+import {
+  AppBar,
+  Box,
+  Container,
+  Link,
+  Toolbar,
+  Typography,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   siteTile: {
@@ -31,27 +38,50 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function NavigationBar() {
+  const [state, setState] = useState({
+    toggleMenu: false,
+    toggleMenuOpen: false,
+  });
+
+  const { toggleMenu, toggleMenuOpen } = state;
+
+  useEffect(() => {
+    const setResponsiveness = () => {
+      return window.innerWidth < 960
+        ? setState((prevState) => ({ ...prevState, toggleMenu: true }))
+        : setState((prevState) => ({ ...prevState, toggleMenu: false }));
+    };
+
+    setResponsiveness();
+
+    window.addEventListener("resize", () => setResponsiveness());
+  }, []);
+
   const classes = useStyles();
+
+  const displayToggleMenu = () => {};
+
+  const displayLargeMenu = () => {
+    <Toolbar className={classes.toolbar}>
+      <Typography className={classes.siteTile}>Mammoth Interactive</Typography>
+
+      <Box className={classes.menuBox}>
+        {["home", "courses", "sign up"].map((menuOption) => (
+          <Link
+            component="button"
+            variant="body1"
+            className={classes.menuOption}
+          >
+            {menuOption.toUpperCase()}
+          </Link>
+        ))}
+      </Box>
+    </Toolbar>;
+  };
 
   return (
     <Container>
-      <Toolbar className={classes.toolbar}>
-        <Typography className={classes.siteTile}>
-          Mammoth Interactive
-        </Typography>
-
-        <Box className={classes.menuBox}>
-          {["home", "courses", "sign up"].map((menuOption) => (
-            <Link
-              component="button"
-              variant="body1"
-              className={classes.menuOption}
-            >
-              {menuOption.toUpperCase()}
-            </Link>
-          ))}
-        </Box>
-      </Toolbar>
+      <AppBar>{toggleMenu ? displayToggleMenu() : displayLargeMenu()}</AppBar>
     </Container>
   );
 }
