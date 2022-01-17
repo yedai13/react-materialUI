@@ -38,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       paddingLeft: theme.spacing(3),
     },
+    color: "white",
+  },
+  menuIcon: {
+    color: "white",
   },
 }));
 
@@ -74,7 +78,7 @@ export default function NavigationBar() {
     return (
       <Toolbar>
         <IconButton {...{ onClick: handleToggleMenuOpen }}>
-          <MenuIcon />
+          <MenuIcon className={classes.menuIcon} />
         </IconButton>
 
         <Drawer
@@ -101,21 +105,25 @@ export default function NavigationBar() {
   };
 
   const displayLargeMenu = () => {
-    <Toolbar className={classes.toolbar}>
-      <Typography className={classes.siteTile}>Mammoth Interactive</Typography>
+    return (
+      <Toolbar className={classes.toolbar}>
+        <Typography component="h1" variant="h6" className={classes.siteTile}>
+          Mammoth Interactive
+        </Typography>
 
-      <Box className={classes.menuBox}>
-        {["home", "courses", "sign up"].map((menuOption) => (
-          <Link
-            component="button"
-            variant="body1"
-            className={classes.menuOption}
-          >
-            {menuOption.toUpperCase()}
-          </Link>
-        ))}
-      </Box>
-    </Toolbar>;
+        <Box className={classes.menuBox}>
+          {["home", "courses", "sign up"].map((menuOption) => (
+            <Link
+              component="button"
+              variant="body1"
+              className={classes.menuOption}
+            >
+              {menuOption.toUpperCase()}
+            </Link>
+          ))}
+        </Box>
+      </Toolbar>
+    );
   };
 
   return (
