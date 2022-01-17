@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import MainGridItem from "./MainGridItem";
 
 const useStyles = makeStyles((theme) => ({
   mainGridItem: {
@@ -22,9 +23,7 @@ const GridLayout = () => {
   return (
     <Grid container spacing={3}>
       <Grid item sm={12} xs={12}>
-        <Typography className={classes.mainGridItem}>
-          Main Grid Items
-        </Typography>
+        <MainGridItem />
       </Grid>
 
       <Grid item sm={6} xs={12}>
