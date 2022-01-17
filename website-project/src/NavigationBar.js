@@ -3,6 +3,18 @@ import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
+  siteTile: {
+    fontWeight: "bold",
+    letterSpacing: 1.5,
+  },
+  toolbar: {
+    display: "flex",
+    flexDirection: "column",
+    [theme.breakpoints.up("md")]: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+    },
+  },
   menuBox: {
     display: "flex",
     flexDirection: "column",
@@ -23,8 +35,10 @@ export default function NavigationBar() {
 
   return (
     <Container>
-      <Toolbar>
-        <Typography>Mammoth Interactive</Typography>
+      <Toolbar className={classes.toolbar}>
+        <Typography className={classes.siteTile}>
+          Mammoth Interactive
+        </Typography>
 
         <Box className={classes.menuBox}>
           {["home", "courses", "sign up"].map((menuOption) => (
