@@ -27,7 +27,7 @@ const GridLayout = () => {
         <MainGridItem />
       </Grid>
 
-      <Grid item sm={6} xs={12}>
+      <Grid item lg={6} md={12} sm={12} xs={12}>
         <GridItem
           title="Excel Masterclass"
           image="https://cdn.pixabay.com/photo/2015/09/05/22/46/business-925900_1280.jpg"
@@ -37,7 +37,7 @@ const GridLayout = () => {
         />
       </Grid>
 
-      <Grid item sm={6} xs={12}>
+      <Grid item lg={6} md={12} sm={12} xs={12}>
         <GridItem
           title="Learn to Code and Get Hired"
           image="https://cdn.pixabay.com/photo/2021/01/21/14/44/laptop-5937580_1280.jpg"
@@ -47,7 +47,7 @@ const GridLayout = () => {
         />
       </Grid>
 
-      <Grid item sm={4} xs={12}>
+      <Grid item lg={4} md={12} sm={12} xs={12}>
         <GridItem
           title="3D Modeling Masterclass"
           image="https://cdn.pixabay.com/photo/2020/01/20/19/08/modelling-4781127_1280.jpg"
@@ -57,7 +57,7 @@ const GridLayout = () => {
         />
       </Grid>
 
-      <Grid item sm={4} xs={12}>
+      <Grid item lg={4} md={12} sm={12} xs={12}>
         <GridItem
           title="Business & Side Hustles"
           image="https://cdn.pixabay.com/photo/2020/12/31/17/39/man-5877068_1280.jpg"
@@ -67,7 +67,7 @@ const GridLayout = () => {
         />
       </Grid>
 
-      <Grid item sm={4} xs={12}>
+      <Grid item lg={4} md={12} sm={12} xs={12}>
         <GridItem
           title="Game Development Masterclass"
           image="https://cdn.pixabay.com/photo/2020/12/31/21/03/deer-5877407_1280.jpg"
