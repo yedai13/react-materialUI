@@ -1,13 +1,17 @@
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Box,
   Container,
+  Drawer,
+  IconButton,
   Link,
+  MenuItem,
   Toolbar,
   Typography,
 } from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
-import React, { useEffect, useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   siteTile: {
@@ -59,7 +63,42 @@ export default function NavigationBar() {
 
   const classes = useStyles();
 
-  const displayToggleMenu = () => {};
+  const displayToggleMenu = () => {
+    const handleToggleMenuOpen = () => {
+      setState((prevState) => ({ ...prevState, toggleMenuOpen: true }));
+    };
+
+    const handleToggleMenuClose = () => {
+      setState((prevState) => ({ ...prevState, toggleMenuOpen: false }));
+    };
+    return (
+      <Toolbar>
+        <IconButton {...{ onClick: handleToggleMenuOpen }}>
+          <MenuIcon />
+        </IconButton>
+
+        <Drawer
+          {...{
+            anchor: "left",
+            open: toggleMenuOpen,
+            onClose: handleToggleMenuClose,
+          }}
+        >
+          <div>{getToggleMenuOptions()}</div>
+        </Drawer>
+      </Toolbar>
+    );
+  };
+
+  const getToggleMenuOptions = () => {
+    return (
+      <Box>
+        {["home", "courses", "sign up"].map((menuOption) => (
+          <MenuItem>{menuOption}</MenuItem>
+        ))}
+      </Box>
+    );
+  };
 
   const displayLargeMenu = () => {
     <Toolbar className={classes.toolbar}>
