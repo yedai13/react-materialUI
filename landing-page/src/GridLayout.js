@@ -15,7 +15,7 @@ const GridLayout = () => {
         <ProductInformation />
       </Grid>
 
-      <Grid item>
+      <Grid item lg={12}>
         <Pricing />
       </Grid>
     </Grid>
