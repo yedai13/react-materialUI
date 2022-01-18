@@ -6,11 +6,11 @@ import ProductInformation from "./ProductInformation";
 const GridLayout = () => {
   return (
     <Grid container>
-      <Grid item>
+      <Grid item lg={12}>
         <MainGridItem />
       </Grid>
 
-      <Grid item>
+      <Grid item lg={12}>
         <ProductInformation />
       </Grid>
     </Grid>
