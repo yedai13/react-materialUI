@@ -8,19 +8,19 @@ import Footer from "./Footer";
 const GridLayout = () => {
   return (
     <Grid container>
-      <Grid item lg={12}>
+      <Grid item lg={12} md={12} sm={12} xs={12}>
         <MainGridItem />
       </Grid>
 
-      <Grid item lg={12}>
+      <Grid item lg={12} md={12} sm={12} xs={12}>
         <ProductInformation />
       </Grid>
 
-      <Grid item lg={12}>
+      <Grid item lg={12} md={12} sm={12} xs={12}>
         <Pricing />
       </Grid>
 
-      <Grid item lg={12}>
+      <Grid item lg={12} md={12} sm={12} xs={12}>
         <Footer />
       </Grid>
     </Grid>
