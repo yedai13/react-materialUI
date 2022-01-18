@@ -32,7 +32,7 @@ const MainGridItem = () => {
     <Container className={mainContainer}>
       <Card>
         <Grid container>
-          <Grid item lg={6} md={6} sm={12} className={mainItem}>
+          <Grid item md={6} className={mainItem}>
             <Typography variant="h2">Unlimited Subcription</Typography>
             <Typography>2,000 hours of online courses</Typography>
             <Button color="primary" variant="contained">
@@ -40,7 +40,7 @@ const MainGridItem = () => {
             </Button>
           </Grid>
 
-          <Grid item lg={6} md={6} sm={12}>
+          <Grid item md={6}>
             <Card className={imageCard}>
               <CardMedia
                 className={cardMedia}

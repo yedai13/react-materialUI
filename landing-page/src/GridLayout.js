@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import MainGridItem from "./MainGridItem";
+import ProductInformation from "./ProductInformation";
 
 const GridLayout = () => {
   return (
@@ -9,7 +10,9 @@ const GridLayout = () => {
         <MainGridItem />
       </Grid>
 
-      <Grid item></Grid>
+      <Grid item>
+        <ProductInformation />
+      </Grid>
     </Grid>
   );
 };
