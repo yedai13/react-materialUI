@@ -3,6 +3,7 @@ import React from "react";
 import { Container, CssBaseline } from "@material-ui/core";
 import NavigationBar from "./NavigationBar";
 import GridLayout from "./GridLayout";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <GridLayout />
         </main>
       </Container>
+      <Footer />
     </div>
   );
 }
