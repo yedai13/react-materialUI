@@ -6,6 +6,7 @@ import {
 } from "@material-ui/core";
 import "./App.css";
 import CuotasHeader from "./Components/CuotasHeader";
+import NavGrafizona from "./Components/NavGrafizona";
 import ProductosMainGrid from "./Components/ProductosMainGrid";
 import StoreGrid from "./Components/StoreGrid";
 
@@ -16,6 +17,9 @@ function App() {
         <CssBaseline />
         <CuotasHeader />
         <Container>
+          <header>
+            <NavGrafizona />
+          </header>
           <main>
             <ProductosMainGrid />
 

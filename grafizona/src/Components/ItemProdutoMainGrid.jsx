@@ -33,7 +33,7 @@ const ItemProductoMainGrid = ({ title, image, description }) => {
   const { imageBox, text, box } = useStyles();
   return (
     <Box className={box}>
-      <img src={image} className={imageBox} />
+      <img src={image} className={imageBox} alt={title} />
       <Box className={text}>
         <Typography variant="h4">{title}</Typography>
         <Typography variant="body1">{description}</Typography>
