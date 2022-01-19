@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#000",
     paddingTop: 10,
     paddingBottom: 10,
+    fontSize: 12,
   },
 }));
 

@@ -33,13 +33,13 @@ const ItemProductoMainGrid = ({ title, image, description }) => {
 };
 
 export default ItemProductoMainGrid;
-{
-  /* <Card className={imageCard}>
-      <CardMedia
-        component="img"
-        alt="Contemplative Reptile"
-        image={skirt}
-        title="Contemplative Reptile"
-      ></CardMedia>
-    </Card> */
-}
+// {
+//   /* <Card className={imageCard}>
+//       <CardMedia
+//         component="img"
+//         alt="Contemplative Reptile"
+//         image={skirt}
+//         title="Contemplative Reptile"
+//       ></CardMedia>
+//     </Card> */
+// }
