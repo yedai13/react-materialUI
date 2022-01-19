@@ -33,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     fontSize: 12,
     borderRadius: 0,
+    "&:hover": {
+      background: "#000",
+      color: "#fff",
+    },
   },
 
   cardAction: {
