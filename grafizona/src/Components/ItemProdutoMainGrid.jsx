@@ -4,8 +4,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   box: {
+    width: 310,
+    height: 310,
     marginTop: 30,
     position: "relative",
+    overflow: "hidden",
   },
   imageBox: {
     width: 310,
