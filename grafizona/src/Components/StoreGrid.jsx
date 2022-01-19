@@ -5,16 +5,8 @@ import akira from "../img/akira-remera.jpg";
 import titancoloso from "../img/titancoloso.jpg";
 import boarding from "../img/boarding.jpg";
 import encoding from "../img/encoding.jpg";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles((theme) => ({
-  storeGrid: {
-    justifyContent: "end",
-  },
-}));
 
 const StoreGrid = () => {
-  const { storeGrid } = useStyles();
   return (
     <Container>
       <Typography>TODO LO PUBLICADO SE ENCUENTRA EN STOCK.</Typography>

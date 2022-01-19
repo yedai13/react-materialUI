@@ -10,7 +10,7 @@ import accesorios from "../img/accesorios.jpg";
 const ProductosMainGrid = () => {
   return (
     <Grid container>
-      <Grid item lg={4} md={6}>
+      <Grid item container justify="center" lg={4} md={6} sm={12} xs={12}>
         <ItemProductoMainGrid
           title="REMERAS"
           description="Anime Vaporwave Japonese Art"
@@ -18,7 +18,7 @@ const ProductosMainGrid = () => {
         />
       </Grid>
 
-      <Grid item lg={4} md={6}>
+      <Grid item container justify="center" lg={4} md={6} sm={12} xs={12}>
         <ItemProductoMainGrid
           title="STICKERS!"
           description="Completa tu compra con los diseños mas originales"
@@ -26,7 +26,7 @@ const ProductosMainGrid = () => {
         />
       </Grid>
 
-      <Grid item lg={4} md={6}>
+      <Grid item container justify="center" lg={4} md={6} sm={12} xs={12}>
         <ItemProductoMainGrid
           title="ACCESORIOS"
           description="Chokers Medias Largas estilo Alternativo"
@@ -34,7 +34,7 @@ const ProductosMainGrid = () => {
         />
       </Grid>
 
-      <Grid item lg={4} md={6}>
+      <Grid item container justify="center" lg={4} md={6} sm={12} xs={12}>
         <ItemProductoMainGrid
           title="MANGA"
           description="Manga y Comics"
@@ -42,7 +42,7 @@ const ProductosMainGrid = () => {
         />
       </Grid>
 
-      <Grid item lg={4} md={6}>
+      <Grid item container justify="center" lg={4} md={6} sm={12} xs={12}>
         <ItemProductoMainGrid
           title="SKIRTS"
           description="Polleras Tableadas Estilo Japones"
@@ -50,7 +50,7 @@ const ProductosMainGrid = () => {
         />
       </Grid>
 
-      <Grid item lg={4} md={6}>
+      <Grid item container justify="center" lg={4} md={6} sm={12} xs={12}>
         <ItemProductoMainGrid
           title="SWEATSHIRTS"
           description="Buzos Cuello Redondo"
