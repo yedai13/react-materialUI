@@ -5,12 +5,28 @@ import akira from "../img/akira-remera.jpg";
 import titancoloso from "../img/titancoloso.jpg";
 import boarding from "../img/boarding.jpg";
 import encoding from "../img/encoding.jpg";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  titulo: {
+    marginTop: 50,
+    marginBottom: 40,
+    fontWeight: "bold",
+    letterSpacing: 0.2,
+  },
+  subtitulo: {
+    marginBottom: 40,
+  },
+}));
 
 const StoreGrid = () => {
+  const { titulo, subtitulo } = useStyles();
   return (
     <Container>
-      <Typography>TODO LO PUBLICADO SE ENCUENTRA EN STOCK.</Typography>
-      <Typography>
+      <Typography variant="h5" className={titulo}>
+        TODO LO PUBLICADO SE ENCUENTRA EN STOCK.
+      </Typography>
+      <Typography className={subtitulo}>
         Si sos de zona Caba o GBA podes acceder a un 20% OFF extra abonando en
         efectivo al recibir o retirando el producto por nuetro taller.
       </Typography>
