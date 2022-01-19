@@ -3,12 +3,10 @@ import {
   Card,
   CardActions,
   CardContent,
-  CardHeader,
   CardMedia,
   Typography,
 } from "@material-ui/core";
 import React from "react";
-import akira from "../img/akira-remera.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -23,15 +21,16 @@ const useStyles = makeStyles((theme) => ({
     width: 225,
   },
 
-  cardHeader: {
+  cardTitle: {
     fontSize: 12,
     letterSpacing: 0.2,
     fontWeight: 400,
+    marginBottom: 5,
   },
   button: {
     textAlign: "center",
     width: "100%",
-    fontSize: 12,
+    fontSize: 11,
     borderRadius: 0,
     "&:hover": {
       background: "#000",
@@ -42,24 +41,38 @@ const useStyles = makeStyles((theme) => ({
   cardAction: {
     justifyContent: "center",
   },
+  bold: {
+    fontWeight: "bold",
+    paddingLeft: 2,
+    paddingRight: 2,
+  },
+  cardContent: {
+    paddingBottom: 10,
+  },
 }));
 
-const ItemStoreGrid = () => {
-  const { cardImage, cardMain, cardHeader, button, cardAction } = useStyles();
+const ItemStoreGrid = ({ title, price, image }) => {
+  const {
+    cardImage,
+    cardMain,
+    cardTitle,
+    button,
+    cardAction,
+    bold,
+    cardContent,
+  } = useStyles();
   return (
     <Card className={cardMain}>
-      <CardMedia image={akira} title="akira" className={cardImage} />
-      <CardContent>
-        <Typography className={cardHeader}>
-          AKIRA 2 - REMERA ESTILO ANIME
-        </Typography>
-        <Typography>$2.790</Typography>
+      <CardMedia image={image} title={title} className={cardImage} />
+      <CardContent className={cardContent}>
+        <Typography className={cardTitle}>{title}</Typography>
+        <Typography>${price}</Typography>
       </CardContent>
 
       <CardActions className={cardAction}>
         <Button variant="outlined" className={button}>
-          {" "}
-          3 cuotas sin interes
+          <span className={bold}>3</span> cuotas sin interes de{" "}
+          <span className={bold}>${Math.round(price / 3)}</span>
         </Button>
       </CardActions>
     </Card>

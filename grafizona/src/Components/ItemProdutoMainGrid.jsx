@@ -5,18 +5,25 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   box: {
     marginTop: 30,
+    position: "relative",
   },
   imageBox: {
     width: 310,
     height: 310,
+    filter: "brightness(70%)",
+    transition: "all 1s",
+    "&:hover": {
+      transform: "scale(1.1)",
+      filter: "brightness(40%)",
+    },
   },
-  //   text: {
-  //     position: "absolute",
-  //     top: "50%",
-  //     left: "50%",
-  //     transform: "translate(-50%,-50%)",
-  //     color: "orange",
-  //   },
+  text: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
+    color: "white",
+  },
 }));
 
 const ItemProductoMainGrid = ({ title, image, description }) => {
@@ -25,8 +32,8 @@ const ItemProductoMainGrid = ({ title, image, description }) => {
     <Box className={box}>
       <img src={image} className={imageBox} />
       <Box className={text}>
-        <Typography>{title}</Typography>
-        <Typography>{description}</Typography>
+        <Typography variant="h4">{title}</Typography>
+        <Typography variant="body1">{description}</Typography>
       </Box>
     </Box>
   );
