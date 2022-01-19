@@ -7,6 +7,7 @@ import {
 import "./App.css";
 import CuotasHeader from "./Components/CuotasHeader";
 import ProductosMainGrid from "./Components/ProductosMainGrid";
+import StoreGrid from "./Components/StoreGrid";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Container>
           <main>
             <ProductosMainGrid />
+
+            <StoreGrid />
           </main>
         </Container>
       </ThemeProvider>
