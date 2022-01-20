@@ -11,6 +11,7 @@ import NavGrafizona from "./Components/NavGrafizona";
 import ProductosMainGrid from "./Components/ProductosMainGrid";
 import StoreGrid from "./Components/StoreGrid";
 import Slider from "./Components/Slider";
+import OfertasGrid from "./Components/OfertasGrid";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Slider />
           </header>
           <main>
+            <OfertasGrid />
             <ProductosMainGrid />
 
             <StoreGrid />
