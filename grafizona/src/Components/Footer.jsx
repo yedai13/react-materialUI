@@ -34,28 +34,39 @@ const useStyles = makeStyles((theme) => ({
   title: {
     marginTop: 20,
     color: "white",
-    paddingLeft: 24,
     textAlign: "left",
+    [theme.breakpoints.down(960)]: {
+      textAlign: "center",
+    },
   },
   iconTarjeta: {
     fontSize: 50,
     color: "white",
     textAlign: "left",
   },
+  centerGrid: {
+    [theme.breakpoints.down(960)]: {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      borderBottom: "1px solid #ccc",
+    },
+  },
 }));
 
 const Footer = () => {
-  const { boxMenu, linkMenu, footer, title, iconTarjeta } = useStyles();
+  const { boxMenu, linkMenu, footer, title, iconTarjeta, centerGrid } =
+    useStyles();
   return (
     <footer className={footer}>
       <Container>
-        <Grid container justifyContent="center">
+        <Grid container>
           <Grid item lg={3} md={6} sm={12} xs={12}>
-            <Typography variant="h6" className={title}>
-              NAVEGACIÓN
-            </Typography>
-            <Toolbar>
+            <Toolbar className={centerGrid}>
               <Box className={boxMenu}>
+                <Typography variant="h6" className={title}>
+                  NAVEGACIÓN
+                </Typography>
                 {[
                   "Inicio",
                   "Productos",
@@ -79,39 +90,39 @@ const Footer = () => {
             </Toolbar>
           </Grid>
 
-          <Grid item lg={3} md={6} sm={12} xs={12}>
+          <Grid item className={centerGrid} lg={3} md={6} sm={12} xs={12}>
             <Typography variant="h6" className={title}>
               MEDIOS DE PAGO
             </Typography>
             <Grid container>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3}>
                 <PaymentIcon className={iconTarjeta} />
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3}>
                 <PaymentIcon className={iconTarjeta} />
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3}>
                 <PaymentIcon className={iconTarjeta} />
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3}>
                 <PaymentIcon className={iconTarjeta} />
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3}>
                 <PaymentIcon className={iconTarjeta} />
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3}>
                 <PaymentIcon className={iconTarjeta} />
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3}>
                 <PaymentIcon className={iconTarjeta} />
               </Grid>
-              <Grid item lg={3}>
+              <Grid item lg={3} md={3} sm={3}>
                 <PaymentIcon className={iconTarjeta} />
               </Grid>
             </Grid>
           </Grid>
 
-          <Grid item lg={3} md={6} sm={12} xs={12}>
+          <Grid item className={centerGrid} lg={3} md={6} sm={12} xs={12}>
             <Typography variant="h6" className={title}>
               CONTACTANOS
             </Typography>
@@ -123,7 +134,7 @@ const Footer = () => {
             </Typography>
           </Grid>
 
-          <Grid item lg={3} md={6} sm={12} xs={12}>
+          <Grid item className={centerGrid} lg={3} md={6} sm={12} xs={12}>
             <Typography variant="h6" className={title}>
               REDES SOCIALES
             </Typography>
