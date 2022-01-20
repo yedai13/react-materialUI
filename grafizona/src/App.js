@@ -10,6 +10,7 @@ import NavBar from "./Components/NavBar";
 import NavGrafizona from "./Components/NavGrafizona";
 import ProductosMainGrid from "./Components/ProductosMainGrid";
 import StoreGrid from "./Components/StoreGrid";
+import Slider from "./Components/Slider";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <header>
             <NavGrafizona />
             <NavBar />
+            <Slider />
           </header>
           <main>
             <ProductosMainGrid />
