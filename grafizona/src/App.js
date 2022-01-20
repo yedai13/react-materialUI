@@ -44,7 +44,8 @@ function App() {
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Outfit, sans-serif",
+    // fontFamily: "Outfit, sans-serif",
+    fontFamily: "PT Sans Narrow, sans-serif",
   },
   components: {
     MuiCssBaseline: {
