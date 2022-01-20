@@ -12,6 +12,7 @@ import ProductosMainGrid from "./Components/ProductosMainGrid";
 import StoreGrid from "./Components/StoreGrid";
 import Slider from "./Components/Slider";
 import OfertasGrid from "./Components/OfertasGrid";
+import BannerInstragram from "./Components/BannerInstagram";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <ProductosMainGrid />
 
             <StoreGrid />
+            <BannerInstragram />
           </main>
         </Container>
       </ThemeProvider>
