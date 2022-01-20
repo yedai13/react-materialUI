@@ -5,9 +5,7 @@ import {
   ThemeProvider,
 } from "@material-ui/core";
 import "./App.css";
-import CuotasHeader from "./Components/CuotasHeader";
 import NavBar from "./Components/NavBar";
-import NavGrafizona from "./Components/NavGrafizona";
 import ProductosMainGrid from "./Components/ProductosMainGrid";
 import StoreGrid from "./Components/StoreGrid";
 import Slider from "./Components/Slider";
@@ -20,11 +18,12 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <CuotasHeader />
+        {/* <CuotasHeader /> */}
+        <NavBar />
         <Container>
           <header>
-            <NavGrafizona />
-            <NavBar />
+            {/* <NavGrafizona /> */}
+
             <Slider />
           </header>
           <main>
