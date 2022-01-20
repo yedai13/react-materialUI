@@ -13,6 +13,7 @@ import StoreGrid from "./Components/StoreGrid";
 import Slider from "./Components/Slider";
 import OfertasGrid from "./Components/OfertasGrid";
 import BannerInstragram from "./Components/BannerInstagram";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -32,8 +33,10 @@ function App() {
 
             <StoreGrid />
             <BannerInstragram />
+            <OfertasGrid />
           </main>
         </Container>
+        <Footer />
       </ThemeProvider>
     </div>
   );

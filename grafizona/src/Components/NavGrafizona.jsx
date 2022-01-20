@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
 const NavGrafizona = () => {
   const { carritoButton, navGrid, logo, inputRoot, inputInput } = useStyles();
   return (
-    <Grid container className={navGrid}>
+    <Grid container justifyContent="space-between" className={navGrid}>
       <Grid item lg={3}>
         <InputBase
           placeholder="Search…"
