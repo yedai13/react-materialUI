@@ -52,7 +52,12 @@ const NavBar = () => {
           "EFECTIVO 20%",
           "MOTOENVIO",
         ].map((menuOption) => (
-          <Link component="button" variant="body1" className={linkMenu}>
+          <Link
+            key={menuOption}
+            component="button"
+            variant="body1"
+            className={linkMenu}
+          >
             {menuOption.toUpperCase()}
           </Link>
         ))}

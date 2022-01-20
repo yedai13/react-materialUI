@@ -31,7 +31,15 @@ const StoreGrid = () => {
         efectivo al recibir o retirando el producto por nuetro taller.
       </Typography>
       <Grid container>
-        <Grid item container justify="center" lg={3} md={4} sm={6} xs={12}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
+        >
           <ItemStoreGrid
             title="AKIRA 2 - REMERA ESTILO ANIME"
             image={akira}
@@ -39,7 +47,15 @@ const StoreGrid = () => {
           />
         </Grid>
 
-        <Grid item container justify="center" lg={3} md={4} sm={6} xs={12}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
+        >
           <ItemStoreGrid
             title="REMERA COLOSSUS ESTILO SKN"
             image={titancoloso}
@@ -47,7 +63,15 @@ const StoreGrid = () => {
           />
         </Grid>
 
-        <Grid item container justify="center" lg={3} md={4} sm={6} xs={12}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
+        >
           <ItemStoreGrid
             title="REMERA BOARDING PASS"
             image={boarding}
@@ -55,7 +79,15 @@ const StoreGrid = () => {
           />
         </Grid>
 
-        <Grid item container justify="center" lg={3} md={4} sm={6} xs={12}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
+        >
           <ItemStoreGrid
             title="REMERA ENCODING THE SKY"
             image={encoding}
@@ -63,7 +95,15 @@ const StoreGrid = () => {
           />
         </Grid>
 
-        <Grid item container justify="center" lg={3} md={4} sm={6} xs={12}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
+        >
           <ItemStoreGrid
             title="AKIRA 2 - REMERA ESTILO ANIME"
             image={akira}
@@ -71,7 +111,15 @@ const StoreGrid = () => {
           />
         </Grid>
 
-        <Grid item container justify="center" lg={3} md={4} sm={6} xs={12}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
+        >
           <ItemStoreGrid
             title="REMERA COLOSSUS ESTILO SKN"
             image={titancoloso}
@@ -79,7 +127,15 @@ const StoreGrid = () => {
           />
         </Grid>
 
-        <Grid item container justify="center" lg={3} md={4} sm={6} xs={12}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
+        >
           <ItemStoreGrid
             title="REMERA BOARDING PASS"
             image={boarding}
@@ -87,7 +143,15 @@ const StoreGrid = () => {
           />
         </Grid>
 
-        <Grid item container justify="center" lg={3} md={4} sm={6} xs={12}>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          lg={3}
+          md={4}
+          sm={6}
+          xs={12}
+        >
           <ItemStoreGrid
             title="REMERA ENCODING THE SKY"
             image={encoding}
