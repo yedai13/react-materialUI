@@ -9,14 +9,17 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20,
     marginBottom: 40,
   },
+  imgCarrusel: {
+    width: "100%",
+  },
 }));
 
 const Slider = () => {
-  const { carrusel } = useStyles();
+  const { carrusel, imgCarrusel } = useStyles();
   return (
     <Carousel interval="6000" className={carrusel}>
-      <img src={slide} alt="" />
-      <img src={ofertas} alt="" />
+      <img src={slide} alt="" className={imgCarrusel} />
+      <img src={ofertas} alt="" className={imgCarrusel} />
     </Carousel>
   );
 };

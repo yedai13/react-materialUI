@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imgBanner: {
     marginBottom: 20,
+    width: "100%",
   },
   title: {
     fontSize: 12,
